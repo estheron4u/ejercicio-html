@@ -453,21 +453,21 @@
         </section>
         <aside>
             <img src="" title="Imagen de dektion download document" alt="">
-            <h3>Descarga nuestro catálogo de producto</h3>
-            <p>Suscríbete a nuestro boletín de noticias y recibe las últimas noticias sobre tendencias, diseño de
-                interiores y moda.</p> <!-- Header -->
-            <form action="">
-                <label for="catalog_email" ></label>
-                <input type="email" name="catalog_email" id="catalog_email" placeholder="Introduce tu email">
+            <header><h3>Descarga nuestro catálogo de producto</h3>
+                <p>Suscríbete a nuestro boletín de noticias y recibe las últimas noticias sobre tendencias, diseño de
+                    interiores y moda.</p></header>
+            <form action="" id="catalog">
+                <label for="catalog_email" >Email</label>
+                <input type="email" name="catalog_email" id="catalog_email" placeholder="Introduce tu email" required>
                 <label for="catalog_privacy-policy">
-                    <input type="checkbox" id="catalog_privacy-policy" value="catalog_privacy-policy">Acepto la <a href="#">Política de Privacidad</a> y la <a
+                    <input type="checkbox" id="catalog_privacy-policy" value="catalog_privacy-policy" required>Acepto la <a href="#">Política de Privacidad</a> y la <a
                         href="#">Cláusula de Contacto</a>
                 </label>
                 <label for="catalog_newsletter">
                     <input type="checkbox" id="catalog_newsletter" value="catalog_newsletter"> SI quiero que me mantengan informado sobre ventajas,
                     promociones, eventos y demás productos de nuestra empresa.
                 </label>
-                <input type="submit" value="Descargar">
+                <input type="submit" value="Descargar" form="catalog">
             </form>
         </aside>
         <section>

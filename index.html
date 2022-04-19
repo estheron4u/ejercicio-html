@@ -212,7 +212,7 @@
                         <li>
                             <a href="#">
                                 <figure>
-                                    <img srcset="./images/baños@2x.jpg, ./images/baños@2x.jpg 2x" alt="baños" title="baños">
+                                    <img srcset="./images/baños@2x.jpg, ./images/baños@2x.jpg 2x" src="./images/baños@2x.jpg" alt="baños" title="baños">
                                     <!-- Imagen retina ¡PREGUNTAR!-->
                                     <figcaption>Baños</figcaption>
                                 </figure>
@@ -410,7 +410,7 @@
         </section>
         <aside>
             <p>Contacta con nuestro equipo comercial y recibe asistencia para tu proyecto</p>
-            <a href="#form-sa">Contacto</a>
+            <a href="#contact">Contacto</a>
         </aside>
         <section>
             <h2>Nuestras marcas</h2>
@@ -504,32 +504,34 @@
             </article>
         </section>
         <section>
-            <h3>Formulario para profesionales</h3>
-            <p>¿Necesitas información o muestras de nuestros materiales, quieres establecer una relación comercial
-                con Cosentino?</p>
-            <form action="">
-                <label for="first-name">Nombre</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Escribe tu nombre" required />
-                <label for="last-name">Apellidos</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Escribe tu apellido" required />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Escribe tu email" required />
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Escribe un número de teléfono de contacto" required />
-                <label for="country">País</label>
-                <select name="country" id="country" required>
+            <header>
+                <h3>Formulario para profesionales</h3>
+                <p>¿Necesitas información o muestras de nuestros materiales, quieres establecer una relación comercial
+                    con Cosentino?</p>
+            </header>
+            <form action="" id="contact">
+                <label for="contact_first-name">Nombre</label>
+                <input type="text" id="contact_first-name" name="contact_first-name" minlength="2" placeholder="Escribe tu nombre" pattern="\D*" required />
+                <label for="contact_last-name">Apellidos</label>
+                <input type="text" id="contact_last-name" name="contact_last-name" minlength="2" pattern="\D*" placeholder="Escribe tu apellido" required />
+                <label for="contact_email">Email</label>
+                <input type="email" id="contact_email" name="contact_email" placeholder="Escribe tu email" required />
+                <label for="contact_phone">Teléfono</label>
+                <input type="tel" id="contact_phone" name="contact_phone" minlength="4" placeholder="Escribe un número de teléfono de contacto" required />
+                <label for="contact_country">País</label>
+                <select name="contact_country" id="contact_country" required>
                     <option value="" disabled selected hidden>Selecciona tu país</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
                     <option value="Andorra">Andorra</option>
                 </select>
-                <label for="postal-code">Código postal</label>
-                <input type="text" id="postal-code" name="postal-code" placeholder="Escribe y selecciona tu código postal" required />
-                <label for="company">Empresa</label>
-                <input type="text" id="company" name="company" placeholder="Escriba el nombre de su empresa" required />
-                <label for="professional-profile">Perfil profesional</label>
-                <select name="professional-profile" id="professional-profile" required>
+                <label for="contact_postal-code">Código postal</label>
+                <input type="text" id="contact_postal-code" name="contact_postal-code" placeholder="Escribe y selecciona tu código postal" required />
+                <label for="contact_company">Empresa</label>
+                <input type="text" id="contact_company" name="contact_company" placeholder="Escriba el nombre de su empresa" required />
+                <label for="contact_professional-profile">Perfil profesional</label>
+                <select name="contact_professional-profile" id="contact_professional-profile" required>
                     <option value="" disabled selected hidden>Selecciona tu perfil</option>
                     <option value="Arquitecto">Arquitecto</option>
                     <option value="Constructor">Constructor</option>
@@ -542,8 +544,8 @@
                     <option value="Prensa">Prensa</option>
                     <option value="Estudiante">Estudiante</option>
                 </select>
-                <label for="subject">Motivo</label>
-                <select name="subject" id="subject" required>
+                <label for="contact_subject">Motivo</label>
+                <select name="contact_subject" id="contact_subject" required>
                     <option value="" disabled selected hidden>Selecciona el motivo de tu consulta</option>
                     <option value="Informacion general de Cosentino">Información general de Cosentino</option>
                     <option value="Asistencia para proyectos">Asistencia para proyectos</option>
@@ -553,15 +555,17 @@
                     <option value="Visita al Showroom">Visita al Showroom</option>
                     <option value="Otros">Otros</option>
                 </select>
-                <label for="comment">Escribe tu pregunta</label>
-                <textarea id="comment" name="comment" rows="10" cols="50" placeholder="Indica qué necesitas"></textarea>
-                <label for="privacy-policy"><input type="checkbox" id="privacy-policy" value="privacy-policy" required>Acepto la Política de Privacidad y la Cláusula de
+                <label for="contact_comment">Escribe tu pregunta</label>
+                <textarea id="contact_comment" name="contact_comment" rows="10" cols="50" placeholder="Indica qué necesitas"></textarea>
+                <label for="privacy-policy">
+                    <input type="checkbox" id="privacy-policy" value="privacy-policy" required>Acepto la Política de Privacidad y la Cláusula de
                     Contacto
                    </label>
-                <label>CAPTCHA</label> <!-- ¿Cómo? -->
-                <input type="submit" value="Enviar">
+                <label>CAPTCHA</label>
+                <input type="submit" value="Enviar" form="contact">
             </form>
         </section>
+        <section>
         <h2>Consulta nuestro blog de tendencias</h2>
         <ul>
             <li>
@@ -607,7 +611,7 @@
         <img src="./images/logo-cosentino-white.svg" alt="">
         <ul>
             <li>
-                <button type="" title="">Empresa</button> <!-- Añadir a todos -->
+                <button type="button">Empresa</button> <!-- Añadir a todos -->
                 <ul>
                     <li><a href="#">Cosentino</a></li>
                     <li><a href="#">I+D e Innovación</a></li>

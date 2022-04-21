@@ -98,3 +98,28 @@ img {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+/* Tablet */
+
+@media (min-width: 575px) {
+
+    .footer {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .footer__nav--block{
+        width: 45%;
+    }
+
+    .footer__nav--title-icon{
+        display: none;
+    }
+}

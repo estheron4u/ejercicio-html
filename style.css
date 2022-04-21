@@ -1,5 +1,6 @@
 img {
     max-width: 100%;
+    /* Para que no interfieran con el ancho y maquetar el footer a gusto */
 }
 
 .footer {
@@ -7,8 +8,15 @@ img {
     padding-top: 32px;
 }
 
+.footer__wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .footer__logo {
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer__logo--img {
@@ -17,8 +25,7 @@ img {
 }
 
 .footer__nav {
-    margin-top: 15px;
-    padding: 15px;
+    margin-top: 48px;
     margin-bottom: 30px;
 }
 
@@ -49,7 +56,7 @@ img {
     color: rgba(255,255,255,.7);
     text-decoration: none;
     margin-bottom: 16px;
-    line-height: 20px;
+    line-height: 21px;
 }
 
 .footer__nav--dropdown {
@@ -72,13 +79,13 @@ img {
     font-size: 16px;
     font-weight: 300;
     color: #ffffff;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .footer__privacy {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 15px 0;
     line-height: 20px;
 }
 
@@ -121,5 +128,38 @@ img {
 
     .footer__nav--title-icon{
         display: none;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+    .footer__wrapper{
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+    }
+
+    .footer__nav {
+        margin-top: 48px;
+        flex-wrap: nowrap;
+    }
+
+    .footer__nav--block{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer__logo {
+        text-align: left;
+    }
+
+    .footer__copyright {
+        position: absolute;
+    }
+
+    .footer__privacy {
+        margin-left: 50%;
     }
 }

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En Cosentino podrás encontrar la solución perfecta para tu proyecto de ingeniería o reforma. Suelos, fachadas o revestimientos.">
     <title>Soluciones Arquitectónicas - Cosentino España</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -600,7 +606,7 @@
                     <option value="Otros">Otros</option>
                 </select>
                 <label for="contact_comment">Escribe tu pregunta</label>
-                <textarea id="contact_comment" name="contact_comment" rows="10" cols="50" placeholder="Indica qué necesitas"></textarea>
+                <textarea id="contact_comment" name="contact_comment" rows="10" cols="40" placeholder="Indica qué necesitas"></textarea>
                 <label for="privacy-policy">
                     <input type="checkbox" id="privacy-policy" value="privacy-policy" required>Acepto la Política de Privacidad y la Cláusula de
                     Contacto
@@ -643,91 +649,111 @@
         </ul>
         </section>
     </main>
-    <footer>
-        <img src="./images/logo-cosentino-white.svg" alt="Logo Cosentino">
-        <ul>
+    <footer class="footer">
+        <div class="footer__logo"><img class="footer__logo--img" src="./images/logo-cosentino-white.svg" alt="Logo Cosentino"></div>
+        <ul class="footer__nav">
             <li>
-                <button type="button">Empresa</button>
-                <ul>
-                    <li><a href="#">Cosentino</a></li>
-                    <li><a href="#">I+D e Innovación</a></li>
-                    <li><a href="#">Seguridad en Cosentino</a></li>
-                    <li><a href="#">Espacio Seguro de Cosentino</a></li>
-                    <li><a href="#">Plataforma de RSC de Cosentino</a></li>
-                    <li><a href="#">CSR Report 2020</a></li>
-                    <li><a href="#">Estado de Información no Financiera 2020</a></li>
-                    <li><a href="#">Instituto Silestone</a></li>
-                    <li><a href="#">Fundación Eduarda Justo</a></li>
+                <button class="footer__nav--title" type="button">Empresa <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Cosentino</a></li>
+                    <li><a class="footer__nav--link" href="#">I+D e Innovación</a></li>
+                    <li><a class="footer__nav--link" href="#">Seguridad en Cosentino</a></li>
+                    <li><a class="footer__nav--link" href="#">Espacio Seguro de Cosentino</a></li>
+                    <li><a class="footer__nav--link" href="#">Plataforma de RSC de Cosentino</a></li>
+                    <li><a class="footer__nav--link" href="#">CSR Report 2020</a></li>
+                    <li><a class="footer__nav--link" href="#">Estado de Información no Financiera 2020</a></li>
+                    <li><a class="footer__nav--link" href="#">Instituto Silestone</a></li>
+                    <li><a class="footer__nav--link" href="#">Fundación Eduarda Justo</a></li>
                 </ul>
             </li>
             <li>
-                <button type="button">Atención al cliente</button>
-                <ul>
-                    <li><a href="#">Dónde comprar</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Garantía | Silestone</a></li>
-                    <li><a href="#">Garantía | Dekton</a></li>
-                    <li><a href="#">Garantía | Sensa</a></li>
-                    <li><a href="#">Condiciones Generales de Compra</a></li>
-                    <li><a href="#">Condiciones Generales de Venta</a></li>
-                    <li><a href="#">Política de Calidad, Seguridad y Salud, Medio Ambiente y Energía</a></li>
-                    <li><a href="#">Código de Ética, Conducta y Cumplimiento Normativo</a></li>
-                    <li><a href="#">Canal de Denuncia</a></li>
+                <button class="footer__nav--title" type="button">Atención al cliente <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Dónde comprar</a></li>
+                    <li><a class="footer__nav--link" href="#">Contacto</a></li>
+                    <li><a class="footer__nav--link" href="#">Garantía | Silestone</a></li>
+                    <li><a class="footer__nav--link" href="#">Garantía | Dekton</a></li>
+                    <li><a class="footer__nav--link" href="#">Garantía | Sensa</a></li>
+                    <li><a class="footer__nav--link" href="#">Condiciones Generales de Compra</a></li>
+                    <li><a class="footer__nav--link" href="#">Condiciones Generales de Venta</a></li>
+                    <li><a class="footer__nav--link" href="#">Política de Calidad, Seguridad y Salud, Medio Ambiente y Energía</a></li>
+                    <li><a class="footer__nav--link" href="#">Código de Ética, Conducta y Cumplimiento Normativo</a></li>
+                    <li><a class="footer__nav--link" href="#">Canal de Denuncia</a></li>
                 </ul>
             </li>
             <li>
-                <button type="button">Área profesional</button>
-                <ul>
-                    <li><a href="#">Cosentino We</a></li>
-                    <li><a href="#">Cosentino Center</a></li>
-                    <li><a href="#">Cosentino City</a></li>
-                    <li><a href="#">Proveedores</a></li>
+                <button class="footer__nav--title" type="button">Área profesional <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Cosentino We</a></li>
+                    <li><a class="footer__nav--link" href="#">Cosentino Center</a></li>
+                    <li><a class="footer__nav--link" href="#">Cosentino City</a></li>
+                    <li><a class="footer__nav--link" href="#">Proveedores</a></li>
                 </ul>
             </li>
             <li>
-                <button type="button">Recursos</button>
-                <ul>
-                    <li><a href="#">Revista C</a></li>
-                    <li><a href="#">Revista C-Top</a></li>
-                    <li><a href="#">Descargas</a></li>
+                <button class="footer__nav--title" type="button">Recursos <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Revista C</a></li>
+                    <li><a class="footer__nav--link" href="#">Revista C-Top</a></li>
+                    <li><a class="footer__nav--link" href="#">Descargas</a></li>
                 </ul>
             </li>
             <li>
-                <button type="button">Empleo</button>
-                <ul>
-                    <li><a href="#">Únete a Cosentino</a></li>
-                    <li><a href="#">Cosentino FP</a></li>
+                <button class="footer__nav--title" type="button">Empleo <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Únete a Cosentino</a></li>
+                    <li><a class="footer__nav--link" href="#">Cosentino FP</a></li>
                 </ul>
             </li>
             <li>
-                <button type="button">Sala de prensa</button>
-                <ul>
-                    <li><a href="#">Noticias</a></li>
+                <button class="footer__nav--title" type="button">Sala de prensa <span class="footer__nav--title-icon">+</span></button>
+                <ul class="footer__nav--dropdown">
+                    <li><a class="footer__nav--link" href="#">Noticias</a></li>
                 </ul>
             </li>
             <li>
-                <p>Follow us:</p>
-                <ul>
-                    <li><a href="https://www.facebook.com/CosentinoInternational" title="facebook"><img src="./images/facebook-icon.svg"
-                                alt=""></a>
+                <p class="footer__nav--title">Follow us:</p>
+                <ul class="footer__social">
+                    <li>
+                        <a class="footer__social--link" href="https://www.facebook.com/CosentinoInternational" title="facebook">
+                            <img src="./images/facebook-icon.svg" alt="facebook">
+                        </a>
                     </li>
-                    <li><a href="https://www.instagram.com/grupocosentino/" title="instagram"><img src="./images/instagram-icon.svg"
-                                alt=""></a></li>
-                    <li><a href="https://www.pinterest.es/grupocosentino/" title="pinterest"><img src="./images/pinterest-icon.svg"
-                                alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/company/cosentino/" title="linkedin"><img src="./images/linkedin-icon.svg"
-                                alt=""></a></li>
-                    <li><a href="https://twitter.com/grupocosentino" title="twitter"><img src="./images/twitter-icon.svg" alt=""></a></li>
-                    <li><a href="https://www.youtube.com/user/CosentinoTV" title="youtube"><img src="./images/youtube-icon.svg" alt=""></a>
+                    <li>
+                        <a class="footer__social--link" href="https://www.instagram.com/grupocosentino/" title="instagram">
+                            <img src="./images/instagram-icon.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social--link" href="https://www.pinterest.es/grupocosentino/" title="pinterest">
+                            <img src="./images/pinterest-icon.svg" alt="pinterest">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social--link" href="https://www.linkedin.com/company/cosentino/" title="linkedin">
+                            <img src="./images/linkedin-icon.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social--link" href="https://twitter.com/grupocosentino" title="twitter">
+                            <img src="./images/twitter-icon.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social--link" href="https://www.youtube.com/user/CosentinoTV" title="youtube">
+                            <img src="./images/youtube-icon.svg" alt="youtube">
+                        </a>
                     </li>
                 </ul>
             </li>
         </ul>
-        <small>Cosentino S.A. Todos los derechos reservados</small>
-        <ul>
-            <li><a href="https://forms.cosentino.com/aviso-legal/">Aviso Legal</a> |</li>
-            <li><a href="https://forms.cosentino.com/politica-de-privacidad/">Política de Privacidad</a> |</li>
-            <li><a href="https://forms.cosentino.com/politica-de-cookies/">Política de Cookies</a></li>
+        <small class="footer__copyright">Cosentino S.A. Todos los derechos reservados</small>
+        <ul class="footer__privacy">
+            <li><a class="footer__privacy--link" href="https://forms.cosentino.com/aviso-legal/">Aviso Legal</a></li>
+            <li><span class="footer__privacy--divider">|</span></li>
+            <li><a class="footer__privacy--link" href="https://forms.cosentino.com/politica-de-privacidad/">Política de Privacidad</a></li>
+            <li><span class="footer__privacy--divider">|</span></li>
+            <li><a class="footer__privacy--link" href="https://forms.cosentino.com/politica-de-cookies/">Política de Cookies</a></li>
         </ul>
     </footer>
     <aside>

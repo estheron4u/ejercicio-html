@@ -5,7 +5,7 @@ img {
 
 .footer {
     background-color: #232323;
-    padding-top: 32px;
+    padding-top: 30px;
 }
 
 .footer__wrapper {
@@ -32,7 +32,7 @@ img {
 .footer__nav--title {
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     border: none;
     color: #ffffff;
@@ -41,6 +41,7 @@ img {
     margin-bottom: 24px;
     width: 100%;
     text-align: left;
+    display: inline-block;
 }
 
 .footer__nav--title-icon {
@@ -51,16 +52,40 @@ img {
 .footer__nav--link {
     display: block;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: rgba(255,255,255,.7);
     text-decoration: none;
     margin-bottom: 16px;
-    line-height: 21px;
+    line-height: 1.3rem;
 }
 
 .footer__nav--dropdown {
+    max-height: 0px;
+    overflow: hidden;
+    list-style: none;
+    transition: all 0.5s ease;
+}
+
+.footer__nav--checkbox {
+    display: none;
+}
+
+.footer__nav--checkbox:checked ~ .footer__nav--dropdown {
     padding-bottom: 30px;
+    height: auto;
+    max-height: 30rem;
+    transition: all 0.5s ease;
+}
+
+.footer__nav--checkbox:checked + .footer__nav--title>.footer__nav--title-icon:after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232323;
 }
 
 .footer__social {
@@ -76,7 +101,7 @@ img {
 
 .footer__copyright {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #ffffff;
     padding: 15px 0;
@@ -86,12 +111,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 15px 0;
-    line-height: 20px;
+    line-height: 1.3rem;
 }
 
 .footer__privacy--link {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: rgba(255,255,255,.7);
     text-decoration: none;
@@ -99,7 +124,7 @@ img {
 
 .footer__privacy--divider {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #ffffff;
     margin-left: 5px;
@@ -124,6 +149,16 @@ img {
 
     .footer__nav--block{
         width: 45%;
+    }
+
+    .footer__nav--dropdown {
+        padding-bottom: 30px;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .footer__nav--title {
+        cursor: auto;
     }
 
     .footer__nav--title-icon{

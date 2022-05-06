@@ -1,19 +1,24 @@
 .footer-privacy {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 0;
-    line-height: 1.3rem;
+    padding: 16px 0;
 }
 
-.footer-privacy__item {
+.footer-privacy__item a {
     color: rgba(255,255,255,.7);
     text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.footer-privacy__divider {
-    color: #ffffff;
-    margin-left: 5px;
-    margin-right: 5px;
+.footer-privacy__item:not(:last-child)::after{
+    content: "";
+    background-color: #ffffff;
+    width: 1px;
+    height: 0.8rem;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 /* Desktop */

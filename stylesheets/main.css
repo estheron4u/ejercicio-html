@@ -1,0 +1,11 @@
+@import "abstracts/_variables.css";
+
+@import "base/_reset.css";
+
+@import "layout/_footer.css";
+
+@import "components/_footer-nav.css";
+@import "components/_footer-social.css";
+@import "components/_footer-privacy.css";
+
+@import "pages/_soluciones-arquitectonicas.css";

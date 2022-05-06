@@ -1,0 +1,14 @@
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: 8px;
+}
+
+.footer-social__item {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    margin-bottom: 4px;
+}

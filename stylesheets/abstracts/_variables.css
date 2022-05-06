@@ -1,0 +1,7 @@
+:root {
+    --main-font-family: 'Roboto', sans-serif;
+    --main-font-size: 1rem;
+    --main-font-weight: 300;
+
+    --layout-indent--mobile: 15px; /* 0.9 rem */
+}

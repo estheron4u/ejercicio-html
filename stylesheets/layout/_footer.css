@@ -1,15 +1,15 @@
 
 .footer {
-    background-color: #232323;
     padding-top: 30px;
-    font-family:  var(--main-font-family);
-    font-size: var(--main-font-size);
     font-weight: var(--main-font-weight);
+    font-size: var(--main-font-size);
+    font-family:  var(--main-font-family);
+    background-color: #232323;
 }
 
 .footer-wrapper {
-    margin-left: var(--layout-indent--mobile);
     margin-right: var(--layout-indent--mobile);
+    margin-left: var(--layout-indent--mobile);
 }
 
 .footer__logo {
@@ -24,8 +24,8 @@
 
 
 .footer__copyright {
-    color: #ffffff;
     padding: 15px 0;
+    color: #ffffff;
 }
 
 /* Tablet */
@@ -43,14 +43,14 @@
 @media (min-width: 992px) {
 
     .footer-wrapper{
+        margin: auto;
         width: 100%;
         max-width: 1140px;
-        margin: auto;
     }
 
     .footer__logo {
-        text-align: left;
         padding-left: 15px;
+        text-align: left;
     }
 
     .footer__copyright {

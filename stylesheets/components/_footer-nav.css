@@ -4,28 +4,28 @@
 }
 
 .footer-nav__title {
-    padding: 0;
-    font-family: var(--main-font-family);
-    font-size: var(--main-font-size);
-    font-weight: 700;
-    border: none;
-    color: #ffffff;
-    background-color: transparent;
-    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 100%;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-family);
     text-align: left;
-    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .footer-nav__title::after {
-    content: attr(data-content);
-    font-family: var(--main-font-family);
-    font-size: var(--main-font-size);
-    color: #ffffff;
-    text-align: right;
     float:right;
+    color: #ffffff;
+    font-size: var(--main-font-size);
+    font-family: var(--main-font-family);
+    text-align: right;
+    content: attr(data-content);
 }
 
 .footer-nav__icon {
@@ -35,11 +35,11 @@
 
 .footer-nav__item {
     display: inline-block;
-    color: rgba(255,255,255,.7);
-    text-decoration: none;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: rgba(255,255,255,.7);
     line-height: 1.3rem;
+    text-decoration: none;
 }
 
 .footer-nav__dropdown {
@@ -50,9 +50,9 @@
 }
 
 .footer-nav__dropdown.show {
-    padding-bottom: 30px;
     height: auto;
     max-height: 30rem;
+    padding-bottom: 30px;
 }
 
 .footer-nav__checkbox {
@@ -75,9 +75,9 @@
     }
 
     .footer-nav__dropdown {
-        padding-bottom: 30px;
         height: auto;
         max-height: 100%;
+        padding-bottom: 30px;
     }
 
     .footer-nav__title {
@@ -99,12 +99,12 @@
 @media (min-width: 992px) {
 
     .footer-nav {
-        margin-top: 48px;
         flex-wrap: nowrap;
+        margin-top: 48px;
     }
 
     .footer-nav__block{
-        padding-left: 15px;
         padding-right: 15px;
+        padding-left: 15px;
     }
 }

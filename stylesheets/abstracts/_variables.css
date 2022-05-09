@@ -3,5 +3,5 @@
     --main-font-size: 1rem;
     --main-font-family: 'Roboto', sans-serif;
 
-    --layout-indent--mobile: 15px; /* 0.9 rem */
+    --layout-indent: 0.9rem;
 }

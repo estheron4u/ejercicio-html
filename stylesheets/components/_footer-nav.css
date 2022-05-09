@@ -1,14 +1,14 @@
 .footer-nav {
-    margin-top: 48px;
-    margin-bottom: 30px;
+    margin-top: 3rem;
+    margin-bottom: 1.9rem;
 }
 
 .footer-nav__title {
     display: inline-block;
     width: 100%;
     padding-left: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
     color: #ffffff;
     font-weight: 700;
     font-size: var(--main-font-size);
@@ -20,7 +20,7 @@
 }
 
 .footer-nav__title::after {
-    float:right;
+    float: right;
     color: #ffffff;
     font-size: var(--main-font-size);
     font-family: var(--main-font-family);
@@ -28,15 +28,10 @@
     content: attr(data-content);
 }
 
-.footer-nav__icon {
-    position: absolute;
-    right: 15px;
-}
-
 .footer-nav__item {
     display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: rgba(255,255,255,.7);
     line-height: 1.3rem;
     text-decoration: none;
@@ -52,7 +47,7 @@
 .footer-nav__dropdown.show {
     height: auto;
     max-height: 30rem;
-    padding-bottom: 30px;
+    padding-bottom: 1.9rem;
 }
 
 .footer-nav__checkbox {
@@ -77,15 +72,11 @@
     .footer-nav__dropdown {
         height: auto;
         max-height: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 1.9rem;
     }
 
     .footer-nav__title {
         cursor: auto;
-    }
-
-    .footer-nav__icon{
-        display: none;
     }
 
     .footer-nav__title::after{
@@ -100,11 +91,11 @@
 
     .footer-nav {
         flex-wrap: nowrap;
-        margin-top: 48px;
+        margin-top: 3rem;
     }
 
     .footer-nav__block{
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 0.9rem;
+        padding-left: 0.9rem;
     }
 }

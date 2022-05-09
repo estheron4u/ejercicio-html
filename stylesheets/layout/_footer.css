@@ -41,12 +41,20 @@
 
 }
 
+@media (min-width: 768px) {
+
+    .footer-wrapper{
+        max-width: 720px;
+    }
+
+}
+
 /* Desktop */
 
 @media (min-width: 992px) {
 
     .footer-wrapper{
-        max-width: 1140px;
+        max-width: 960px;
     }
 
     .footer__logo {
@@ -57,6 +65,14 @@
     .footer__copyright {
         position: absolute;
         padding-left: 0.9rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .footer-wrapper{
+        max-width: 1140px;
     }
 
 }

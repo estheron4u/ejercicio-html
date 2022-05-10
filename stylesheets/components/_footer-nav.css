@@ -28,15 +28,6 @@
     content: attr(data-content);
 }
 
-.footer-nav__item {
-    display: inline-block;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: rgba(255,255,255,.7);
-    line-height: 1.3rem;
-    text-decoration: none;
-}
-
 .footer-nav__dropdown {
     max-height: 0;
     overflow: hidden;
@@ -50,9 +41,10 @@
     padding-bottom: 1.9rem;
 }
 
-.footer-nav__checkbox {
-    display: none;
+.footer-nav__dropdown .nav-item {
+    color: rgba(255,255,255,.7);
 }
+
 
 /* Tablet */
 

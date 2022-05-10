@@ -4,6 +4,7 @@
 
 @import "layout/_footer.css";
 
+@import "components/_nav-item.css";
 @import "components/_footer-nav.css";
 @import "components/_footer-social.css";
 @import "components/_footer-privacy.css";

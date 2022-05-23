@@ -1,10 +1,10 @@
 
 .nav-item {
     display: inline-block;
-    padding-top: 0.35rem;
-    padding-bottom: 0.35rem;
-    margin-top: 0.15rem;
-    margin-bottom: 0.15rem;
-    line-height: 1.4rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    line-height: 1.5rem;
     text-decoration: none;
 }

@@ -7,10 +7,10 @@
     display: inline-block;
     width: 100%;
     padding: 0.5rem 0 1.5rem;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: var(--main-font-size);
-    font-family: var(--main-font-family);
+    color: var(--color__white);
+    font-weight: var(--font-weight__bold);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
     text-align: left;
     background-color: transparent;
     border: none;
@@ -19,9 +19,9 @@
 
 .footer-nav__title::after {
     float: right;
-    color: #ffffff;
-    font-size: var(--main-font-size);
-    font-family: var(--main-font-family);
+    color: var(--color__white);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
     text-align: right;
     content: attr(data-content);
 }
@@ -40,7 +40,7 @@
 }
 
 .footer-nav__dropdown .nav-item {
-    color: rgba(255,255,255,.7);
+    color: var(--color__grey);
 }
 
 /* Tablet */

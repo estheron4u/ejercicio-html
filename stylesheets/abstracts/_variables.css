@@ -1,7 +1,13 @@
 :root {
-    --main-font-weight: 300;
-    --main-font-size: 1rem;
-    --main-font-family: 'Roboto', sans-serif;
+    --font-weight__light: 300;
+    --font-weight__bold: 700;
+    --font-size: 1rem;
+    --font-family: 'Roboto', sans-serif;
 
-    --layout-indent: 0.9rem;
+    --color__black: #232323;
+    --color__white: #ffffff;
+    --color__grey: rgba(255,255,255,.7);
+
+    --layout-indent--mobile: 0.9rem;
+    --layout-indent--tablet: 10%;
 }

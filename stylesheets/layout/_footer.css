@@ -1,13 +1,13 @@
 .footer {
     padding-top: 1.9rem;
-    font-weight: var(--main-font-weight);
-    font-size: var(--main-font-size);
-    font-family:  var(--main-font-family);
-    background-color: #232323;
+    font-weight: var(--font-weight__light);
+    font-size: var(--font-size);
+    font-family:  var(--font-family);
+    background-color: var(--color__black);
 }
 
 .footer-wrapper {
-    padding: 0 var(--layout-indent);
+    padding: 0 var(--layout-indent--mobile);
 }
 
 .footer__logo {
@@ -23,7 +23,7 @@
 .footer__copyright {
     display: inline-block;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--color__white);
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
 
     .footer-wrapper{
         margin: auto;
-        padding: 0 10%;
+        padding: 0 var(--layout-indent--tablet);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

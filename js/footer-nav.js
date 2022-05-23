@@ -3,7 +3,7 @@
 const dropdownButton = document.querySelectorAll('.footer-nav__title');
 
 function showNavDropdown(event){
-    event.preventDefault()
+
     const dropdownTitle = event.currentTarget;
     if(document.documentElement.clientWidth < 575){
         dropdownTitle.nextElementSibling.classList.toggle("show");

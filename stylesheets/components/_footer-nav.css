@@ -6,9 +6,7 @@
 .footer-nav__title {
     display: inline-block;
     width: 100%;
-    padding-left: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding: 0.5rem 0 1.5rem;
     color: #ffffff;
     font-weight: 700;
     font-size: var(--main-font-size);
@@ -45,7 +43,6 @@
     color: rgba(255,255,255,.7);
 }
 
-
 /* Tablet */
 
 @media (min-width: 575px) {
@@ -54,11 +51,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 0;
+        width: 100%;
     }
 
     .footer-nav__block{
-        width: 45%;
+        width: 48%;
     }
 
     .footer-nav__dropdown {
@@ -79,15 +76,13 @@
 
 /* Desktop */
 
-@media (min-width: 992px) {
+@media (min-width: 1030px) {
 
     .footer-nav {
         flex-wrap: nowrap;
-        margin-top: 3rem;
     }
 
     .footer-nav__block{
-        padding-right: 0.9rem;
-        padding-left: 0.9rem;
+        width: 22%;
     }
 }

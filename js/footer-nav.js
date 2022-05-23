@@ -1,20 +1,14 @@
 'use strict'
 
-const dropdownButton = document.querySelectorAll('.footer-nav__title');
+const expandableButton = document.querySelectorAll('.footer-nav__title');
 
-function showNavDropdown(event){
-
-    const dropdownTitle = event.currentTarget;
-    if(document.documentElement.clientWidth < 575){
-        dropdownTitle.nextElementSibling.classList.toggle("show");
-        if(dropdownTitle.dataset.content === '+'){
-            dropdownTitle.setAttribute('data-content', '-');
-        } else if (dropdownTitle.dataset.content === '-'){
-            dropdownTitle.setAttribute('data-content', '+');
-        }
-    }
+function toggleNavAccordion(event){
+        event.currentTarget.nextElementSibling.classList.toggle("footer-nav__expandable--active");
+        event.currentTarget.classList.toggle("footer-nav__title--active");
 }
 
-for (let i = 0; i < dropdownButton.length; i++) {
-    dropdownButton[i].addEventListener('click', showNavDropdown);
+if(window.matchMedia("(max-width: 575px)").matches){
+    for (let i = 0; i < expandableButton.length; i++) {
+        expandableButton[i].addEventListener('click', toggleNavAccordion);
+    }
 }

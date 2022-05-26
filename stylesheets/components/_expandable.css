@@ -1,0 +1,32 @@
+.expandable__button{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.expandable__button::after {
+    color: var(--color__white);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    content: '+';
+}
+
+.expandable__button--is-expanded::after {
+    color: var(--color__white);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    content: '-';
+}
+
+.expandable__element {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.expandable__element--is-expanded {
+    height: auto;
+    max-height: 30rem;
+}

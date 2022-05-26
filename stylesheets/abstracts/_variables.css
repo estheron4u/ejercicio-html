@@ -8,6 +8,13 @@
     --color__white: #ffffff;
     --color__grey: rgba(255,255,255,.7);
 
-    --layout-indent--mobile: 0.9rem;
     --layout-indent--tablet: 10%;
+    --layout-indent--mobile: 0.9rem;
+
+    --spacing__48px: 48px;
+    --spacing__32px: 32px;
+    --spacing__16px: 16px;
+    --spacing__8px: 8px;
+    --spacing__4px: 4px;
+
 }

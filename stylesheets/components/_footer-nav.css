@@ -1,6 +1,6 @@
 .footer-nav {
-    margin-top: 3rem;
-    margin-bottom: 1.9rem;
+    margin-top: var(--spacing__48px);
+    margin-bottom: var(--spacing__32px)
 }
 
 .footer-nav__title {

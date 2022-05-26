@@ -7,7 +7,8 @@
 }
 
 .footer-wrapper {
-    padding: 0 var(--layout-indent--mobile);
+    padding-right: var(--layout-indent--mobile);
+    padding-left: var(--layout-indent--mobile);
 }
 
 .footer__logo {
@@ -22,7 +23,7 @@
 
 .footer__copyright {
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing__16px);
     color: var(--color__white);
     width: 100%;
 }
@@ -33,7 +34,8 @@
 
     .footer-wrapper{
         margin: auto;
-        padding: 0 var(--layout-indent--tablet);
+        padding-right: var(--layout-indent--tablet);
+        padding-left: var(--layout-indent--tablet);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;

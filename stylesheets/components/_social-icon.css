@@ -1,10 +1,4 @@
-.footer-social {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -0.5rem;
-}
-
-.footer-social__item {
+.social-icon {
     display: block;
     width: 2rem;
     height: 2rem;

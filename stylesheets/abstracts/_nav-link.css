@@ -1,0 +1,7 @@
+.nav-link {
+    --nav-link-color: var(--color__grey);
+    --nav-link-font-weight: var(--font-weight__light);
+    --nav-link-font-size: var(--paragraph-font-size);
+    --nav-link-font-family: var(--paragraph-font-family);
+    --nav-link-spacing: var(--spacing__4px);
+}

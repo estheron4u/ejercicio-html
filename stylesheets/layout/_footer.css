@@ -1,14 +1,36 @@
 .footer {
     padding-top: 1.9rem;
-    font-weight: var(--font-weight__light);
-    font-size: var(--font-size);
-    font-family:  var(--font-family);
     background-color: var(--color__black);
 }
 
 .footer-wrapper {
     padding-right: var(--layout-indent--mobile);
     padding-left: var(--layout-indent--mobile);
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+}
+
+.footer-privacy {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav {
+    margin-top: var(--spacing__48px);
+    margin-bottom: var(--spacing__32px)
+}
+
+.footer-nav__list {
+    width: 100%;
+    list-style: none;
+}
+
+.footer-nav__list.expandable__content--is-expanded {
+    padding-bottom: 1.5rem;
 }
 
 .footer__logo {
@@ -22,8 +44,11 @@
 
 
 .footer__copyright {
+    font-family:  var(--paragraph-font-family);
+    font-weight: var(--font-weight__light);
     display: inline-block;
-    margin-bottom: var(--spacing__16px);
+    margin-top: var(--spacing__8px);
+    margin-bottom: var(--spacing__8px);
     color: var(--color__white);
     width: 100%;
 }
@@ -39,6 +64,43 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-privacy {
+        flex-direction: row;
+    }
+
+    .footer-privacy__link + .footer-privacy__link::before{
+        display: inline-block;
+        width: 1px;
+        height: 0.8rem;
+        margin-right: var(--spacing__8px);
+        margin-left: var(--spacing__8px);
+        background-color: var(--color__white);
+        content: "";
+    }
+
+
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-nav__block{
+        width: 48%;
+    }
+
+    .footer-nav__list.expandable__content{
+        height: auto;
+        max-height: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    .nav-title::after{
+        display: none;
     }
 
 }
@@ -46,6 +108,10 @@
 /* Desktop */
 
 @media (min-width: 1030px) {
+
+    .footer-privacy {
+        width: 48%;
+    }
 
     .footer__logo {
         text-align: left;
@@ -55,5 +121,13 @@
     .footer__copyright {
         width: 48%;
     }
+    .footer-nav {
+        flex-wrap: nowrap;
+    }
+
+    .footer-nav__block{
+        width: 22%;
+    }
+
 
 }

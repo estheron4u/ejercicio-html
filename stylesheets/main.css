@@ -5,9 +5,8 @@
 @import "layout/_footer.css";
 
 @import "components/_expandable.css";
-@import "components/_nav-item.css";
-@import "components/_footer-nav.css";
-@import "components/_footer-social.css";
-@import "components/_footer-privacy.css";
+@import "components/_nav-title.css";
+@import "components/_nav-link.css";
+@import "components/_social-icon.css";
 
 @import "pages/_soluciones-arquitectonicas.css";

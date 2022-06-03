@@ -1,0 +1,6 @@
+:root {
+    --font-weight__light: 300;
+    --font-weight__bold: 700;
+    --paragraph-font-size: 1rem;
+    --paragraph-font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,13 @@
+
+.nav-link {
+    font-weight: var(--nav-link-font-weight);
+    font-size: var(--nav-link-font-size);
+    font-family:  var(--nav-link-font-family);
+    color: var(--nav-link-color);
+    display: inline-block;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: var(--nav-link-spacing);
+    margin-bottom: var(--nav-link-spacing);
+    line-height: 1.5rem;
+}

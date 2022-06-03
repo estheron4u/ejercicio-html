@@ -1,0 +1,6 @@
+.nav-title {
+    --nav-title-color: var(--color__white);
+    --nav-title-font-weight: var(--font-weight__bold);
+    --nav-title-font-size: var(--paragraph-font-size);
+    --nav-title-font-family: var(--paragraph-font-family);
+}

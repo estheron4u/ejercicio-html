@@ -1,19 +1,21 @@
 'use strict'
 
+const breakpointMobile = '(max-width: 575px)';
 const expandableButton = document.querySelectorAll('.expandable__button');
 
 function toggleExpandable(event){
-        event.currentTarget.nextElementSibling.classList.toggle("expandable__content--is-expanded");
-        event.currentTarget.classList.toggle("expandable__button--is-expanded");
+    const activatedButton = event.currentTarget;
+    const expandableContainer = activatedButton.parentElement;
+    const expandableContent = expandableContainer.querySelector('.expandable__content');
+
+    expandableContent.classList.toggle("expandable__content--is-expanded");
+    activatedButton.classList.toggle("expandable__button--is-expanded");
 }
 
-if(window.matchMedia("(max-width: 575px)").matches){
-    for (let i = 0; i < expandableButton.length; i++) {
-        expandableButton[i].addEventListener('click', toggleExpandable);
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.matchMedia(breakpointMobile).matches && Object.keys(expandableButton).length >= 1) {
+        for (let i = 0; i < expandableButton.length; i++) {
+            expandableButton[i].addEventListener('click', toggleExpandable);
+        }
     }
-}
-
-// Esperar a que cargue el dom
-// Comprobar que el expandable button existe
-// Guardar cosas en variables
-// Breakpoints en variables JS
+});

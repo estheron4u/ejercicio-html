@@ -13,7 +13,7 @@ function toggleExpandable(event){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.matchMedia(breakpointMobile).matches && Object.keys(expandableButton).length >= 1) {
+    if (window.matchMedia(breakpointMobile).matches && expandableButton.length >= 1) {
         for (let i = 0; i < expandableButton.length; i++) {
             expandableButton[i].addEventListener('click', toggleExpandable);
         }

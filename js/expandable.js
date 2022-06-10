@@ -5,8 +5,8 @@ const breakpointTablet = '(min-width: 575px)';
 const expandableButton = document.querySelectorAll('.expandable__button');
 const expandableContent = document.querySelectorAll('.expandable__content');
 
-document.addEventListener("DOMContentLoaded", addButtonListener );
-window.addEventListener('resize', addButtonListener, true);
+document.addEventListener("DOMContentLoaded", changeExpandableStyle );
+window.addEventListener('resize', changeExpandableStyle, true);
 
 function toggleExpandable(event){
     const activatedButton = event.currentTarget;
@@ -28,7 +28,7 @@ function toggleExpandable(event){
     }
 }
 
-function addButtonListener () {
+function changeExpandableStyle () {
     if (window.matchMedia(breakpointMobile).matches && expandableButton.length >= 1) {
         for (let i = 0; i < expandableButton.length; i++) {
             expandableButton[i].addEventListener('click', toggleExpandable);
